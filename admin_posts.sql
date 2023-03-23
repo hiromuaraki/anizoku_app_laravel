@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 5.7.32, for osx10.14 (x86_64)
+--
+-- Host: localhost    Database: anizoku_app_development
+-- ------------------------------------------------------
+-- Server version	5.7.32
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `admin_posts`
+--
+
+DROP TABLE IF EXISTS `admin_posts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `admin_posts` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `updated_at` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `admin_posts`
+--
+
+LOCK TABLES `admin_posts` WRITE;
+/*!40000 ALTER TABLE `admin_posts` DISABLE KEYS */;
+INSERT INTO `admin_posts` VALUES (1,'no_image','20210318162026.jpg','2021-03-18 07:20:26.344653','2021-03-18 07:20:26.344653'),(2,'no_image','20210318162111.jpg','2021-03-18 07:21:11.439061','2021-03-18 07:21:11.439061'),(3,'no_image3','20210318164520.jpg','2021-03-18 07:45:20.735745','2021-03-18 07:45:20.735745'),(4,'no_image3','20210318164634.jpg','2021-03-18 07:46:34.943227','2021-03-18 07:46:34.943227'),(5,'no_image3','20210318164731.jpg','2021-03-18 07:47:31.658712','2021-03-18 07:47:31.658712'),(6,'no_image','20210318170242.jpg','2021-03-18 08:02:42.347455','2021-03-18 08:02:42.347455');
+/*!40000 ALTER TABLE `admin_posts` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-03-19 21:10:00
